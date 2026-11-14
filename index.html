@@ -1551,7 +1551,8 @@
         .replace(/<\/?span[^>]*>/gi, "")
         .replace(/<\/?u\s*>/gi, "")
         .replace(/<[^>]*>/g, "")
-        .replace(//g, "")
+        .replace(/
+/g, "")
         .split("
 ")
         .map(line => line.trim())
